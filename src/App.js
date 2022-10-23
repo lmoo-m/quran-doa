@@ -23,11 +23,11 @@ function App() {
     const mode = localStorage.getItem("mode");
     const nav = localStorage.getItem("nav");
     const [idMode, setIdMode] = useState(mode);
-    const [showNav, setShowNav] = useState(nav || "");
+    const [showNav, setShowNav] = useState(nav || "hide");
 
     useEffect(() => {
         localStorage.setItem("mode", idMode);
-        localStorage.setItem("nav", showNav);
+        localStorage.setItem("nav", showNav || "hide");
     }, [idMode, showNav]);
 
     return (

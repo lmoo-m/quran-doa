@@ -22,7 +22,7 @@ const Navbar = ({ idMode, setIdMode, mode, theme, setShowNav }) => {
                 <div>
                     <Link
                         to={"/"}
-                        onClick={() => setShowNav("")}
+                        onClick={() => setShowNav("hide")}
                         className="link"
                     >
                         <h2>home</h2>
